@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <input type="number" name="text" id="inputnumber" class="inputnumber">
+        
+        <section id="comandsection">
+            <input type="button" value="Backspace" onclick="backspace()">
+            <input type="button" value="Clear" onclick="clean()">
+            <input type="button" value="=" onclick="result()">
+        </section>
+
+        <div>
+            <section id="numbers" class="numbers">
+                <input type="button" value="9">
+                <input type="button" value="8">
+                <input type="button" value="7">
+                <input type="button" value="6">
+                <input type="button" value="5">
+                <input type="button" value="4">
+                <input type="button" value="3">
+                <input type="button" value="2">
+                <input type="button" value="1">
+                <input type="button" value="0">   
+            </section>
+            
+            <section id="operator" class="operator">
+                <input type="button" value="-">
+                <input type="button" value="+">
+                <input type="button" value="/">
+                <input type="button" value="x">
+                <input type="button" value=",">
+            </section>
+        </div>
+    </nav>
+    <script src="./script.js"></script>
+</body>
+</html>
