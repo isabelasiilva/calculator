@@ -8,7 +8,7 @@ body {
     background: rgb(162, 199, 217);
 }
 
-nav {
+main {
     padding: 20px;
     border: solid 1px rgb(48, 50, 48);
     background-color: rgb(234, 237, 239);
@@ -24,13 +24,15 @@ input {
     padding: 25px;
     width: 250px;
     text-align: right;
+    background-color:rgb(255, 255, 255);
+    border: solid 1px rgb(48, 50, 48);
 }
 
-/* REMOVER SETAS DO INPUT NUMBER */
+/* REMOVER SETAS DO INPUT NUMBER
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}
+} */
 
 #comandsection {
     display: flex;
@@ -69,9 +71,9 @@ div {
     align-items: center;
     width: 250px;    
     gap: 10px;
-
     padding-right: 20px;
 }
+
 
 #operator {
     display: flex;
@@ -81,10 +83,15 @@ div {
     padding-right: 10px;
 }
 
-#operator input, #numbers input{
+#operator input {
     font-size: 20px;
     padding: 10px;
-    width: 60px;
-    
+    width: 65px;    
+}
+
+#numbers input{
+    font-size: 20px;
+    padding: 15px;
+    width: 70px;    
 }
 
