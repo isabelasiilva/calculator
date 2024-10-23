@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <input type="number" name="text" id="inputnumber" class="inputnumber">
+    <main>
+        <input type="text" name="text" id="inputnumber" class="inputnumber">
         
         <section id="comandsection">
             <input type="button" value="Backspace" onclick="backspace()">
@@ -18,27 +19,27 @@
 
         <div>
             <section id="numbers" class="numbers">
-                <input type="button" value="9">
-                <input type="button" value="8">
-                <input type="button" value="7">
-                <input type="button" value="6">
-                <input type="button" value="5">
-                <input type="button" value="4">
-                <input type="button" value="3">
-                <input type="button" value="2">
-                <input type="button" value="1">
-                <input type="button" value="0">   
+                <input type="button" value="9" onclick="number(9)" >
+                <input type="button" value="8" onclick="number(8)" >
+                <input type="button" value="7" onclick="number(7)" >
+                <input type="button" value="6" onclick="number(6)" >
+                <input type="button" value="5" onclick="number(5)" >
+                <input type="button" value="4" onclick="number(4)" >
+                <input type="button" value="3" onclick="number(3)" >
+                <input type="button" value="2" onclick="number(2)" >
+                <input type="button" value="1" onclick="number(1)" >
+                <input type="button" value="0" onclick="number(0)" >   
             </section>
             
             <section id="operator" class="operator">
-                <input type="button" value="-">
-                <input type="button" value="+">
-                <input type="button" value="/">
-                <input type="button" value="x">
-                <input type="button" value=",">
+                <input type="button" value="-" onclick="operator('-')">
+                <input type="button" value="+" onclick="operator('+')">
+                <input type="button" value="/" onclick="operator('/')">
+                <input type="button" value="x" onclick="operator('x')">
+                <input type="button" value="." onclick="dot('.')" >   
             </section>
         </div>
-    </nav>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
